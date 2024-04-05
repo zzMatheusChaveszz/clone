@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando o <Esp-32></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background: #257ac9;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        img {
+            border: 2.2px solid black;
+            border-radius: 100%;
+            width: 48%;
+        }
+
+        .container {
+            width: 48%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            padding-left: 15rem;
+
+        }
+
+
+        .h2-footer {
+            padding-top: 3rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            .container {
+                flex-direction: column;
+                justify-content: space-around;
+                column-gap: 1rem;
+                margin-top: 1px;
+                padding: 2rem;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Aula de sistemas embarcados II</h1>
+    </div>
+
+    <div class="container">
+        <img src="Chaves-image.PNG" alt="Foto Esquerda">
+        <div class="txt-image">
+            <h2>Olá meu nome é Matheus Chaves e tenho 17 anos</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="jhoel-image.PNG" alt="Foto Direita">
+        <h2>Olá meu nome é Jhoel Rayan e tenho 17 anos</h2>
+    </div>
+    </div>
+
+    <div class="text-home">
+        <h2 class="h2-footer">Etec Albert Einstein</h2>
+    </div>
+</body>
+
+</html>
