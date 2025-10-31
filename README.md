@@ -1,81 +1,41 @@
-/* ======== 🔹 Responsividade (celulares e tablets) ======== */
-
-/* Tablets e telas médias */
-@media (max-width: 1024px) {
-  #chat {
-    margin: 10px 4rem;
-    padding: 15px;
+const data = {
+  inicio: {
+    pergunta: "Em que área posso ajudar?",
+    opcoes: ["Portfólio", "Operações", "Jurídico", "Crédito"]
+  },
+  Portfólio: {
+    pergunta: "Sobre Portfólio?",
+    opcoes: ["Como abrir um Chamado?", "Teste"],
+    respostas: {
+      "Como abrir um Chamado?": 
+        'Você pode abrir clicando aqui 👉 <a href="https://helpprodutos.supplier.com.br" target="_blank" style="color:#A3D65C;">Abrir Chamado</a>',
+      "Teste": 
+        'Aqui está um exemplo de imagem:<br><img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="250" style="margin-top:10px;border-radius:10px;">'
+    }
+  },
+  Operações: {
+    pergunta: "Sobre Operações:",
+    opcoes: ["Como comprar?", "É seguro?"],
+    respostas: {
+      "Como comprar?": 
+        'Assista ao vídeo explicativo abaixo:<br><iframe width="300" height="170" style="margin-top:10px;border-radius:10px;" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Tutorial" frameborder="0" allowfullscreen></iframe>',
+      "É seguro?": "É volátil, exige cautela e carteira segura."
+    }
+  },
+  Jurídico: {
+    pergunta: "Sobre Jurídico:",
+    opcoes: ["Vantagens", "Riscos"],
+    respostas: {
+      "Vantagens": "Renda mensal isenta de IR para pessoa física.",
+      "Riscos": "Vacância e desvalorização dos imóveis."
+    }
+  },
+  Crédito: {
+    pergunta: "Sobre Crédito:",
+    opcoes: ["Segurança", "Rentabilidade"],
+    respostas: {
+      "Segurança": "Mais previsível e seguro que renda variável.",
+      "Rentabilidade": "Geralmente menor que ações, mas constante."
+    }
   }
-
-  .message {
-    max-width: 80%;
-    font-size: 15px;
-  }
-
-  header h1 {
-    font-size: 22px;
-  }
-}
-
-/* Celulares */
-@media (max-width: 768px) {
-  #chat {
-    margin: 10px 1rem;
-    padding: 10px;
-  }
-
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 8px 12px;
-  }
-
-  header img {
-    width: 38px;
-    height: 35px;
-  }
-
-  header h1 {
-    font-size: 20px;
-  }
-
-  .message {
-    font-size: 14px;
-    padding: 8px 12px;
-    max-width: 85%;
-  }
-
-  .options-container {
-    gap: 8px;
-  }
-
-  button.message.user {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  #RX580 {
-    width: 8rem;
-  }
-}
-
-/* Celulares pequenos (ex: 320px) */
-@media (max-width: 480px) {
-  #chat {
-    margin: 5px;
-    padding: 8px;
-  }
-
-  .message {
-    max-width: 90%;
-    font-size: 13px;
-  }
-
-  header h1 {
-    font-size: 18px;
-  }
-
-  #RX580 {
-    display: none; /* Oculta imagem fixa em telas muito pequenas */
-  }
-}
+};
